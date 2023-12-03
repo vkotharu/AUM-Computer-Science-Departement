@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Computer Science Department</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/TA.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <img src="images/logo.png" alt="aum logo" width="150px">
+            </div>
+            <div class="header-right">
+                <div class="title">
+                    <h1>Computer Science Departement</h1>
+                </div>
+                <div class="menu">
+                    <ul class="nav_menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="description.html">Program Description</a></li>
+                        <li><a href="TA.html" class="current">TA Application</a></li>
+                        <li><a href="GPA.html">GPA Calculator</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="form">
+                <h1>Teaching Assistant Application Form</h1>
+                <h2>Applicant Information</h2>
+
+                <form name="myform" action="survey_data.html" method="get">
+                    <label for="firstname">First name:</label>
+                    <input type="text" name="firstname" id="firstname" required><br>
+                    <label for="lastname">Last name:</label>
+                    <input type="text" name="lastname" id="lastname"><br>
+                    <label for="studentid">Student ID:</label>
+                    <input type="text" name="studentid" id="studentid" required><br>
+                    <label for="gender">Gender: </label>
+                    <span style="margin-left: 35px;">
+                        <label for="male">M</label>
+                        <input type="radio" name="gender" id="male" value="male" checked>
+                        <label for="female">F</label>
+                        <input type="radio" name="gender" id="female" value="female">
+                    </span> <br>
+                    <label for="gpa">GPA:</label>
+                    <input style="margin-left: 50px;" type="number" name="gpa" id="gpa" required><br>
+                    <label for="comments">Comments:</label>
+                    <textarea name="" id="" cols="30" rows="5" name="comments" id="comments"></textarea> <br>
+
+                    <h2>Thank you for completing the application!</h2>
+                    <input class="buttons" type="submit" name="button" id="button" value="Submit">
+                    <input class="buttons" type="reset" name="reset" id="reset">
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="left">
+                <secton>
+                    7400 East Drive<br>
+                    Montgomery, AL 36117 <br>
+                    Local: 334-244-3000 <br>
+                    Toll-Free: 800-227-2649
+                </secton>
+            </div>
+            <div class="center">&copy;2023 Venkat Sandeep Parmeshwarrao Kotharu</div>
+            <div class="right">
+                <img id="fb" src="images/facebook-social-network-logo.png">
+                <img src="images/pinterest-logo.png">
+                <img id="twt" src="images/twt.jpeg">
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
